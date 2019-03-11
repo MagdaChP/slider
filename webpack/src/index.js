@@ -24,8 +24,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   carouselSlider.appendChild(carouselImage);
 
-  // setInterval( () => {
-  //   carouselImage.classList.add("move-img");
-  // }, 1500);
-
 })
