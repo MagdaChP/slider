@@ -15,6 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
     sliderImage.src = sliderImgArray[index];
   }, 2000);
 
-  document.body.appendChild(sliderBox.appendChild(sliderImage));
+  sliderBox.appendChild(sliderImage);
+
+  const carouselSlider = document.querySelector('.carousel-slider');
+  const carouselImage = document.createElement('img');
+  carouselImage.src = './assets/img/wiele.jpg';
+  carouselImage.classList.add("move-img");
+
+  carouselSlider.appendChild(carouselImage);
+
+  // setInterval( () => {
+  //   carouselImage.classList.add("move-img");
+  // }, 1500);
 
 })

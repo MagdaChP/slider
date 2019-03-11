@@ -5,3 +5,33 @@
 .text {
     color: #000;
 }
+
+.carousel-slider {
+    width: 1000px;
+    overflow: hidden;
+}
+
+.move-img {
+    // transform: translate(-1000px, 0px);
+    animation-name: nextImg;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.26, 1.11, 1, 1);;
+}
+
+@keyframes nextImg {
+    0%, 25% {
+        transform: translate(0px, 0px);
+    }
+    50% {
+        transform: translate(-1000px, 0);
+    }
+    100% {
+        transform: translate(-2000px, 0);
+    }
+    // 100% {
+    //     transform: translate(-3000px, 0);
+    // }
+}
