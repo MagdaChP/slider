@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  const sliderImgArray = ['assets/img/img_mountains_wide.jpg', 'assets/img/img_nature_wide.jpg', 'assets/img/img_snow_wide.jpg'];
+  const sliderImgArray = ['./assets/img/autumn.png', 'assets/img/img_mountains_wide.jpg', 'assets/img/img_nature_wide.jpg', 'assets/img/img_snow_wide.jpg'];
   const sliderBox = document.querySelector('.slider-box');
   const sliderImage = document.createElement('img');
   let index = 0;
