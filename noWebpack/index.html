@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+  <style>
+    .slider-section img:first-child {
+      display: block;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 2s;
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .3
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 class="main-heading">Automatic Slideshow</h2>
+
+  <div class="slider-section" style="max-width:500px">
+    <img class="mySlides" src="asstets/img/img_mountains_wide.jpg" style="width:100%">
+    <img class="mySlides" src="asstets/img/img_nature_wide.jpg" style="width:100%">
+    <img class="mySlides" src="asstets/img/img_snow_wide.jpg" style="width:100%">
+  </div>
+
+  <script>
+    var myIndex = 0;
+
+    setInterval(() => {
+      var sliderImgArray = document.querySelectorAll("img.mySlides");
+
+      for (var i = 0; i < sliderImgArray.length; i++) {
+        sliderImgArray[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex >= sliderImgArray.length) { myIndex = 0 }
+      sliderImgArray[myIndex].style.display = "block";
+      sliderImgArray[myIndex].classList.add("fade");
+    }, 2000);
+
+  </script>
+
+</body>
+
+</html>
