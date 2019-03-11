@@ -17,6 +17,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.body.appendChild(sliderBox.appendChild(sliderImage));
 
-
-
 })
